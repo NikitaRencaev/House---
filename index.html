@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House</title>
+
+    <link rel="icon" href="./img/Star.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.1.0/css/all.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <img src="./img/header/Star.png" alt="star">
+                        <span class="header__logo-text">Ink. House</span>
+                    </a>
+                </div>
+
+                <div class="header__links">
+                    <div class="links">
+                        <a href="#">Репродукции</a>
+                        <a href="#">Новинки</a>
+                        <a href="#">О нас</a>
+                    </div>
+
+                    <!-- menu mobile -->
+                    <div class="menu-mobile">
+                        <div class="menu-mobile__container">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!--  -->
+                    
+                    <div class="shop">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__left">
+                        <img src="./img/hero/bird-hero.png" alt="bird">
+                    </div>
+
+                    <div class="hero__right">
+                        <h1 class="hero-right__title">
+                            Реплики картин<br>
+                            от <span>Ink. House</span>
+                        </h1>
+                        <p class="hero-right__info">
+                            Высокое качество отрисовки на плотной бумаге или льняном 
+                            холсте. Редкие произведения, доступные цены.
+                        </p>
+                        <button class="hero-right__button btn">
+                            Продукция
+                        </button>
+                    </div>
+                </div>
+
+                <!-- mobile menu -->
+                <div class="hero__mobile container">
+                    <div class="hero-mobile__links">
+                        <a href="#">Репродукции</a>
+                        <a href="#">Новинки</a>
+                        <a href="#">О нас</a>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__content">
+                    <div class="catalog__top">
+                        <h2 class="catalog-top__title">
+                            Репродукции
+                        </h2>
+
+                        <nav class="catalog-top__nav">
+                            <button class="catalog__btn btn rounded-green-btn active" data-country="france">
+                                Франция
+                            </button>
+                            <button class="catalog__btn btn rounded-green-btn" data-country="germany">
+                                Германия
+                            </button>
+                            <button class="catalog__btn btn rounded-green-btn" data-country="england">
+                                Англия
+                            </button>
+                        </nav>
+                    </div>
+
+                    <ul class="catalog__cards grid" id="cards" role="list">
+                        <!-- Содержимое загружается через JS -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo">
+            <div class="container">
+                <div class="promo__content">
+                    <h2 class="promo__title">
+                        Новая коллекция французских авторов
+                    </h2>
+
+                    <p class="promo__info">
+                        Сложно сказать, почему акционеры крупнейших компаний призывают 
+                        нас к новым свершениям, которые, в свою очередь, должны быть 
+                        заблокированы в рамках своих собственных рациональных ограничений.<br><br>
+
+                        Принимая во внимание показатели успешности, граница обучения кадров 
+                        предопределяет высокую востребованность направлений прогрессивного развития.
+                    </p>
+
+                    <button class="btn block-yellow-btn promo__button">
+                        Ознакомиться
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <div class="team__content">
+                    <picture>
+                        <source srcset="./img/team/team-img-mobile.png"
+                        media="(max-width: 320px)">
+                        <source srcset="./img/team/team-img-mini.png"
+                        media="(max-width: 576px)">
+                        <source srcset="./img/team/team-img-tablet.png"
+                        media="(max-width: 768px)">
+                        <img src="./img/team/team-img.png" alt="Рука с кисточками в рамке" 
+                        class="team__photo">
+                    </picture>
+
+                    <article class="team__info">
+                        <h2 class="team-info__title">
+                            Наша команда
+                        </h2>
+                        <p class="team-info__description">
+                            Значимость этих проблем настолько очевидна, что базовый вектор 
+                            развития позволяет оценить значение экспериментов, поражающих по своей 
+                            масштабности и грандиозности. Мы вынуждены отталкиваться от того, что 
+                            консультация с широким активом.
+                        </p>
+                        <ul class="team-info__members">
+                            <li><img src="./img/team/team-avatar-01.png" alt="Аватар художника 1"></li>
+                            <li><img src="./img/team/team-avatar-02.jpg" alt="Аватар художника 2"></li>
+                            <li><img src="./img/team/team-avatar-03.jpg" alt="Аватар художника 3"></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="./img/footer/footer-logo.png" alt="Ink House Logo">
+                            <span>Ink. House</span>
+                        </a>
+                    </div>
+                    <div class="footer__contact">
+                        <a class="footer__phone" href="tel:+79995435454">+7 (999) 543-54-54</a>
+                        <p class="footer__master">Мастерская</p>
+                    </div>
+                </div>
+
+                <nav class="footer__nav">
+                    <!-- Показывается на телефонах -->
+                    <div class="footer__contact footer__contact-mobile">
+                        <a class="footer__phone" href="tel:+79995435454">+7 (999) 543-54-54</a><br>
+                        <span class="footer__master">Мастерская</span>
+                    </div>
+                    <!--  -->
+
+                    <div class="footer__column reproduction">
+                        <h3>Репродукции</h3>
+                        <ul class="footer__column-links">
+                            <li><a href="#">Франция</a></li>
+                            <li><a href="#">Германия</a></li>
+                            <li><a href="#">Англия</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column news">
+                        <h3>Новинки</h3>
+                        <ul class="footer__column-links">
+                            <li><a href="#">2021</a></li>
+                            <li><a href="#">2020</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column about">
+                        <h3>О нас</h3>
+                        <ul class="footer__column-links">
+                            <li><a href="#">Художники</a></li>
+                            <li><a href="#">Менеджеры</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="footer__right">
+                    <div class="footer__social" aria-label="Social media" role="img">
+                        <a href="#" aria-label="Facebook">
+                            <img src="./img/footer/facebook-logo.svg" alt="facebook logo">
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <img src="./img/footer/instagramm-logo.svg" alt="instagram logo">
+                        </a>
+                        <a href="#" aria-label="Youtube">
+                            <img src="./img/footer/youtube-logo.svg" alt="youtube logo">
+                        </a>
+                    </div>
+
+                    <div class="footer__copyright">
+                        Ink. House™ <br>
+                        All rights reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

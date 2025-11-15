@@ -1,0 +1,172 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset styles */
+@import "./reset.css";
+
+/* Blocks styles */
+@import "./blocks/header.css";
+@import "./blocks/hero.css";
+@import "./blocks/catalog.css";
+@import "./blocks/promo.css";
+@import "./blocks/team.css";
+@import "./blocks/footer.css";
+
+/* Main styles */
+:root {
+    --primary-green: #598D66;
+    --light-green: #D4E8D9;
+    --dark-green: #376B44;
+    --text-dark: #2C2D35;
+    --text-light: #86928B;
+    --bg-light: #E1EDE6;
+    --font-main: "Raleway", sans-serif;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Link styles */
+a {
+    color: #2C2D35;
+}
+a:hover {
+    color: #598D66;
+    cursor: pointer;
+}
+a:active {
+    color: #2C2D35;
+    cursor: pointer;
+    background: #D4E8D9;
+}
+a.active {
+    color: #376B44;
+}
+
+/* Buttons styles and Block Green Button Styles  */
+.btn {
+    border: 1px solid #598D66;
+    color: #598D66;
+    background: none;
+
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    color: #F4F6F5;
+    background: #598D66;
+}
+.btn:active {
+    color: #598D66;
+    background: #D4E8D9;
+    border: 1px solid #598D66;
+
+    transition: none;
+}
+.btn.active {
+    color: #FFFFFF;
+    background: #376B44;
+    border: 1px solid #376B44;
+}
+
+/* Rounded green button styles */
+.rounded-green-btn {
+    border-radius: 20px;
+    color: #2C2D35;
+    background: #D4E8D9;
+    border: none;
+
+    transition: all 0.3s ease;
+}
+.rounded-green-btn:hover {
+    color: #F4F6F5;
+    background: #598D66;
+}
+.rounded-green-btn:active {
+    color: #2C2D35;
+    background: #D4E8D9;
+    border: 1px solid #598D66;
+}
+.rounded-green-btn.active {
+    color: #FFFFFF;
+    background: #376B44;
+    border: 1px solid #376B44;
+}
+
+/* Block Yellow Button Styles */
+.block-yellow-btn {
+    color: #2C2D35;
+    background: #EEDB6D;
+    border: none;
+
+    transition: all 0.3s ease;
+}
+.block-yellow-btn:hover {
+    color: #2C2D35;
+    background: #FAEB97;
+}
+.block-yellow-btn:active {
+    color: #2C2D35;
+    background: #FAEB97;
+    border: 1px solid #A38314;
+}
+.block-yellow-btn.active {
+    color: #2C2D35;
+    background: #D9B949;
+    border: 1px solid #D9B949;
+}
+/*  */
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+
+    max-width: 1140px;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width) {
+    .container {
+        padding: 165px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 39px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 0 33px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 33px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        padding: 0 15px;
+    }
+}

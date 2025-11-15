@@ -1,0 +1,126 @@
+.promo {
+    position: relative;
+    margin: 70px 0;
+    overflow: hidden;
+    background-image: url('./../../img/promo/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.promo::before {
+    content: '';
+    width: 50%;
+    height: 120%;
+    position: absolute;
+    top: 0; left: 0;
+    background: rgba(13, 43, 67, 0.7);
+    mix-blend-mode: multiply;
+    filter: blur(315px);
+    z-index: -1;
+}
+
+.promo__content {
+    position: relative;
+    z-index: 2;
+    padding: 70px 0;
+}
+
+.promo__title {
+    position: relative;
+    max-width: 530px;
+
+    font-size: 40px;
+    padding-left: 100px;
+    line-height: 100%;
+    color: #F4F6F5;
+
+    background-image: url('./../../img/promo/star.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.promo__info {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 540px;
+
+    margin: 20px 0 60px 0;
+    color: #ffffff;
+}
+
+.promo__button {
+    width: 257px;
+    height: 65px;
+}
+
+@media (max-width: 768px) {
+    .promo {    
+        background-image: url('./../../img/promo/background-tablet.png');
+    }
+    .promo::before {
+        width: 80%;
+    }
+
+    .promo__title {
+        font-size: 30px;
+        padding-left: 80px;
+        max-width: 450px;
+    }
+
+    .promo__info {
+        max-width: 100%;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .promo {
+        margin: 50px 0;
+        background-image: url('./../../img/promo/background-mini.png');
+    }
+    .promo::before {
+        width: 100%;
+    }
+    .promo__content {
+        padding: 50px 0;
+    }
+
+    .promo__info {
+        margin: 20px 0;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .promo__title {
+        max-width: 331px;
+        padding-left: 70px;
+        font-size: 24px;
+    }   
+    
+    .promo__button {
+        width: 190px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo {
+        margin: 60px 0;
+        background-image: url('./../../img/promo/background-mobile.png');
+    }
+
+    .promo__title {
+        padding-left: 60px;
+        background-size: 50px 50px;
+        background-position: left top;
+    }
+    .promo__info {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .promo__button {
+        width: 100%;
+    }
+}
